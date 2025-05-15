@@ -1,0 +1,20 @@
+.card{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 200px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.paragraph {
+    margin-left: 5px;
+}
+.name {
+    margin-left: 5px
+} 
+.icon {
+    margin-left: 5px;
+    margin-top: 5px;
+}
