@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.container{
+    background-image: url('./banner.svg');
+    background-size: cover;
+    background-position: center;
+    height: 716px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.title {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+.bgTitle{
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    background-color: #7CCDDB;
+    padding: 0 50px 0 10px;
+    transform: rotate(-2deg);
+    display: inline-block;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem; 
+    border-radius: 0.25rem; 
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+.button:hover {
+    color: #000;
+    background-color: #7CCDDB; 
+}
+.imageContainer{
+    display: none;
+}
+
+
+
+
+@media (min-width: 600px) {
+    
+}
+@media (min-width: 710px) {
+    .textContainer{
+        width: 50%;
+        margin-left: 20px;
+        justify-content: flex-start;
+    }
+    .title {
+        font-size: 1.9rem;
+        text-align: left;
+    }
+    .bgTitle{
+    font-size: 1.9rem;
+    }
+    .imageContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .bannerImage{
+    width: 450px;
+    height: 450px;
+}
+
+}
+
+@media (min-width: 900px) {
+    .textContainer{
+        width: 50%;
+        margin-left: 50px;
+
+    }
+    .title {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+    .bgTitle{
+        font-size: 2.2rem;
+    }
+    .imageContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .bannerImage{
+    width: 450px;
+    height: 500px;
+    }
+}
+@media (min-width: 950px) {
+    .textContainer{
+        margin-left: 0;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .bgTitle{
+        font-size: 2.5rem;
+    }
+
+    .bannerImage{
+    width: 600px;
+    height: 600px;
+}
+}
+    
+
