@@ -23,9 +23,11 @@ export default function Feedback(){
                 </svg>
                 <h2>Feedback</h2>
             </div>
+            <div className={styles.containerCards}> 
             <FeedbackCard nome={clientesFeedback.cliente1.nome} descricao={clientesFeedback.cliente1.descricao}/>
             <FeedbackCard nome={clientesFeedback.cliente2.nome} descricao={clientesFeedback.cliente2.descricao}/>
             <FeedbackCard nome={clientesFeedback.cliente3.nome} descricao={clientesFeedback.cliente3.descricao}/>
+            </div>
         </div>
     )
 }
