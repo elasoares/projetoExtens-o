@@ -1,0 +1,102 @@
+.containerFlex{
+    background-color: black;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.logo {
+    /* border: 1px solid red; */
+    width: 250px
+}
+.containerEmpresa {
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid green; */
+    color: azure;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+} 
+.lista {
+    list-style-type: None;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    /* border: 1px solid blue; */
+    gap: 15px;
+} .title {
+    font-size: 30px;
+} .containerFaleConosco {
+    font-family: 'Poppins', sans-serif;
+    color: azure;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    font-size: 25px;
+    gap: 15px;
+} .wpp {
+    width: 50px;
+} .text {
+    text-align: center;
+} .containerRedeSocial {
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+} .containerEmail {
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* border:1px solid red; */
+}  .containerInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px
+
+} .btEmail {
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 0;
+    width: 150px;
+} .btText{
+    font-size: 20px;
+} .inputEmail {
+    padding: 8px;
+    width: 300px;
+    background-color: black;
+    border-color: azure;
+    border-radius: 8px;
+
+} .titleEmail {
+    font-size: 26px;
+} .line {
+    height: 2px;
+    width: 330px;
+    background-color: grey
+} .containerCopyRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+    gap: 15px;
+    
+}

@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   /* border: 1px solid blue; */
-  height: 80vh;
+  min-height: 100dvh;
   gap: 20px
 }
 .containerTitle {
