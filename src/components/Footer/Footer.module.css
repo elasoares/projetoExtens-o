@@ -88,7 +88,7 @@
     font-size: 26px;
 } .line {
     height: 2px;
-    width: 330px;
+    width: 80dvw;
     background-color: grey
 } .containerCopyRight {
     display: flex;
@@ -99,4 +99,56 @@
     font-family: 'Poppins', sans-serif;
     gap: 15px;
     
+} @media (min-width: 1024px) {
+    .containerFlex {
+        background-color: black;
+        /* border: 3px solid yellow; */
+        min-height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 40px;
+        flex-wrap: wrap;
+        width: 100dvw;
+        font-size: 15px;
+    } .logo {
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    width: 150px;
+    } .containerEmpresa {
+        margin-top: 30px;
+        /* border: 1px solid green; */
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+   
+}
+.containerCopyRight {
+    justify-self: flex-start;
+    /* border: 1px solid blue; */
+    width: 100dvw;
+} .containerFaleConosco {
+    margin-top: 30px;
+} .containerRedeSocial {
+    display: none;
+} .line {
+    height: 2px;
+    width: 80dvw;
+    background-color: grey
+} .item {
+    text-align: lef;
+    width: 100%;
+    font-size: 15px;
+} .text {
+    font-size: 15px;
+} .divLogo {
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px
+}
 }

@@ -8,8 +8,10 @@ function App() {
 
   return (
     <>
-    {/* <Feedback/> */}
+    <div> 
+    <Feedback/>
     <Footer/>
+    </div>
     </>
   )
 }
