@@ -1,0 +1,122 @@
+.navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* <-- alinhamento à esquerda */
+  gap: 2rem; /* espaço entre elementos */
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  height: 40px;
+}
+
+.logoText {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover,
+.links a:focus {
+  font-weight: bold;
+}
+
+.search {
+  background-color: #f4f4f4;
+  border-radius: 3px; /* <-- menos arredondado */
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  margin-left: auto; /* empurra para o final à direita */
+  width: 40%; /* <-- mais larga */
+  height: 20px; /* <-- altura reduzida */
+  max-width: 400px; /* <-- largura máxima */
+  max-width: 100%;
+}
+
+.searchIcon {
+  color: #888;
+  margin-right: 0.5rem;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%; /* <-- ocupa todo espaço */
+}
+
+/* Toggle menu button (mobile) */
+.menuToggle {
+  background: none;
+  border: none;
+  color: white;
+  margin-right: 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* Mostrar toggle no mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logoArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* ocupa a largura inteira */
+    order: 1; /* garante que fique em cima */
+  }
+
+  .menuToggle {
+    display: block;
+    margin-right: auto; /* empurra para a esquerda */
+  }
+
+  .logo {
+    margin-left: auto; /* empurra logo para a direita */
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: #000;
+    padding: 1rem;
+    margin-top: 1rem;
+    order: 2;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .search {
+    width: 100%;
+    margin-top: 1rem;
+    order: 3;
+  }
+}
