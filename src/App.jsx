@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import  Feedback  from './components/Feedback/Feedback'
-import Footer from './components/Footer/Footer'
+import  Feedback  from './componentsPatrick/Feedback/Feedback'
+import Footer from './componentsPatrick/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
