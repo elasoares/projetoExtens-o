@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.sobreNos {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #444;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.linha {
+  height: 24px;
+  width: 4px;
+  background-color: #d4aa11;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* <-- menor distância entre texto e imagem */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.conteudo p {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.imagem {
+  flex: 1;
+  max-width: 600px; /* <-- maior imagem */
+  height: auto;
+  border-radius: 8px;
+  background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .conteudo p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .imagem {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+}

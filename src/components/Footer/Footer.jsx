@@ -13,7 +13,7 @@ useEffect(() => {
 },[])
     return(
         <> 
-        <div className={styles.containerFlex}>
+        <div className={styles.containerFlex} id='contato'>
             <div className={styles.divLogo}>
                 <img className={styles.logo} src={logo} alt='logo'/>
                 {largura > 1023 ? (
@@ -28,13 +28,19 @@ useEffect(() => {
                 <h2 className={styles.title}>Empresa</h2>
                 <ul className={styles.lista}>
                     <li className={styles.item}>
-                        Home
+                        <a href='#home' className={styles.navigation}> 
+                            Home
+                        </a>
                     </li>
                     <li className={styles.item}>
-                        Nossos Produtos
+                         <a href='#produtos' className={styles.navigation}> 
+                            Nossos Produtos
+                        </a> 
                     </li>
                     <li className={styles.item}>
-                        Sobre
+                         <a href='#sobre' className={styles.navigation}> 
+                            Sobre
+                        </a> 
                     </li>
                 </ul>
             </div>
