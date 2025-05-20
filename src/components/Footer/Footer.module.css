@@ -25,11 +25,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
+    font-size: 15px;
     /* border: 1px solid blue; */
     gap: 15px;
 } .title {
-    font-size: 30px;
+    font-size: 20px;
 } .containerFaleConosco {
     font-family: 'Poppins', sans-serif;
     color: azure;
@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: center;
     width: 250px;
-    font-size: 25px;
+    font-size: 15px;
     gap: 15px;
 } .wpp {
     width: 50px;
@@ -98,6 +98,7 @@
     color: azure;
     font-family: 'Poppins', sans-serif;
     gap: 15px;
+    font-size: 15px;
     
 } @media (min-width: 1024px) {
     .containerFlex {
