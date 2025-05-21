@@ -51,11 +51,13 @@
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.1rem;
+    border: none;
 }
 .button:hover {
     color: #000;
     background-color: #7CCDDB; 
 }
+
 .imageContainer{
     display: none;
 }
