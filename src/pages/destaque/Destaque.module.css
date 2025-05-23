@@ -1,0 +1,142 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcfc;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 50px 100px;
+    line-height: 25px;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #000000;
+}
+
+.bar{
+    height: 24px;
+    width: 4px;
+    background-color: #d4aa11;
+}
+
+.destaque{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.img{
+    width: 280px;
+    height: 380px;
+    border-radius: 2px;
+}
+
+
+.descriptionContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    padding: 10px 0px;
+    margin: 0 auto;
+}
+.textContainer{
+    width: 60%;
+}
+
+.description{
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #000000;
+}
+
+.brand{
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #807D7E;
+}
+.cart{
+    font-weight: 550;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    color: #000000;
+    padding: 3px 12px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+/* .btnDirecionarVitrine{
+
+} */
+
+@media (min-width: 650px) {
+    .destaque{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 650px;
+    }
+}
+
+@media (min-width: 750px) {
+    .destaque{
+        width: 750px;
+    }
+}
+
+@media (min-width: 950px) {
+    .destaque{
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+    }
+}
+
+@media (min-width: 1070px) {
+    .destaque{
+        width: 800px;
+    }
+
+}
+@media (min-width: 1400px) {
+    .destaque{
+        width: 100%;
+    }
+
+}
+@media (min-width: 1800px) {
+    .destaque{
+        width: 80%;
+    }
+
+}
+

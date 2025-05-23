@@ -1,27 +1,28 @@
-import { useState } from 'react'
 import './App.css'
 
+import { HashRouter, Navigate, Route, Routes, } from "react-router";
 
-import NavBar from './components/NavBar/NavBar'
-import Banner from './components/banner/Banner'
-import Destaque from './components/destaque/Destaque'
-import SobreNos from './components/SobreNos/SobreNos'
-import Feedback from './components/Feedback/Feedback'
-import Footer from './components/Footer/Footer'
+import Destaque from './pages/destaque/Destaque';
+import SobreNos from './pages/SobreNos/SobreNos';
+import { Layout } from './layout/layout/Layout';
+import { Home } from './layout/home/Home';
+import { Vitrine } from './pages/vitrine/Vitrine';
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <div> 
-    <NavBar/>
-    <Banner/>
-    <Destaque/>
-    <SobreNos/>
-    <Feedback/>
-    <Footer/>
-    </div>
-    </>
+    <HashRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/produtos" element={<Destaque/>} />
+          <Route path="/sobre" element={<SobreNos />} />
+          <Route path="/contato" element="Contato" />
+          <Route path="/vitrine" element={<Vitrine/>} />
+        </Routes>
+      </Layout>
+    </HashRouter>
   )
 }
 

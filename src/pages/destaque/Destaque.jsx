@@ -4,6 +4,8 @@ import img2 from "../../assets/2.jpg"
 import img3 from "../../assets/3.jpg"
 import img4 from "../../assets/4.jpg"
 import { CiShoppingCart } from "react-icons/ci";
+import { Card } from '../../components/card/Card';
+import { Link } from 'react-router-dom';
 
 const destaque = [
     {img: img1, title:"Bermuda com elas...", brand:"nike"},
@@ -21,7 +23,7 @@ export default function Destaque(){
             </div>
             <div className={styles.destaque}>
                 {destaque.map((item, index) => (
-                    <div key={index} className={styles.item}>
+                    <Card key={index} className={styles.item}>
                         <img src={item.img} alt={item.title} className={styles.img} />
                         <div className={styles.descriptionContainer}>
                             <div className={styles.textContainer}>
@@ -30,9 +32,10 @@ export default function Destaque(){
                             </div>
                             <a className={styles.cart} href=''><CiShoppingCart /></a>
                         </div>
-                    </div>
+                    </Card>
                 ))}
             </div>
+            <Link to="/vitrine" className={styles.btnDirecionarVitrine}>Ir para vitrine</Link>
         </section>
     );
 }

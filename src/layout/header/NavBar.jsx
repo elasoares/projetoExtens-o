@@ -3,11 +3,11 @@ import styles from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
 
-export default function NavBar() {
+export default function NavBar({className}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className={styles.navbar}>
+    <header className={`${className} ${styles.navbar}`}>
       <div className={styles.logoArea}>
         {/* Toggle para mobile */}
         <button

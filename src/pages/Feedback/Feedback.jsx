@@ -1,5 +1,6 @@
 import styles from './Feedback.module.css'
-import FeedbackCard from '../FeedbackCard/FeedbackCard'
+import FeedbackCard from "../../components/FeedbackCard/FeedbackCard"
+
 export default function Feedback(){
     const clientesFeedback = {
         cliente1: {

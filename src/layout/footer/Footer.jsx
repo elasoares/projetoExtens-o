@@ -4,7 +4,7 @@ import wpp from '../../assets/wpp.png'
 import styles from './Footer.module.css'
 
 
-export default function Footer() {
+export default function Footer({className}) {
     const [largura, setLargura] = useState(window.innerWidth);
 useEffect(() => {
     const resize = () => setLargura(window.innerWidth);
@@ -13,7 +13,7 @@ useEffect(() => {
 },[])
     return(
         <> 
-        <div className={styles.containerFlex} id='contato'>
+        <div className={`${className} ${styles.containerFlex}`} id='contato'>
             <div className={styles.divLogo}>
                 <img className={styles.logo} src={logo} alt='logo'/>
                 {largura > 1023 ? (
