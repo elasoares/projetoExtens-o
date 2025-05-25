@@ -18,7 +18,7 @@ export function Vitrine(){
             <div className={styles.titleContainer}>
                 <h2 className={styles.title}><div className={styles.bar}></div>Nossos produtos</h2>
             </div>
-            <div>
+            <div className={styles.filterContainer}>
                 <Button onClick={() => setGenero("feminino")} ativo={genero === "feminino"}>Feminino</Button>
                 <Button onClick={() => setGenero("masculino")} ativo={genero === "masculino"}>Masculino</Button>
                 <Button onClick={() => setGenero("todos")} ativo={genero === "todos"}>Todos</Button>

@@ -5,7 +5,10 @@ export default function SobreNos() {
   return (
     <section className={styles.sobreNos} id="sobre">
       <h2 className={styles.titulo}>
-        <span className={styles.linha}></span> Sobre nós
+      <svg width="7" height="45" viewBox="0 0 7 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" width="6" height="45" rx="3" fill="#EBD96B"/>
+      </svg>
+      <span></span> Sobre nós
       </h2>
       <div className={styles.conteudo}>
         <p>

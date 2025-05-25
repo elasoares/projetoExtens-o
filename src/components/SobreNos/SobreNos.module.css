@@ -1,19 +1,20 @@
-body {
-  font-family: "Poppins", sans-serif;
-}
+
 
 .sobreNos {
+  font-family: "Poppins", sans-serif;
   padding: 4rem 2rem;
   background-color: #fff;
-  color: #444;
+  color: black;
+  scroll-margin-top: 10px;
 }
 
 .titulo {
-  font-size: 1.8rem;
+  font-size: 30px;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-left : -20px;
 }
 
 .linha {
@@ -65,6 +66,6 @@ body {
   }
 
   .titulo {
-    font-size: 1.5rem;
+    font-size: 25px;
   }
 }

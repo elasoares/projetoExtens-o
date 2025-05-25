@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
+import ScrollLink from "../../components/scrollLink/ScrollLink";
 
 export default function NavBar({className}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,18 +23,12 @@ export default function NavBar({className}) {
 
       {/* Sidebar mobile */}
       <nav className={`${styles.links} ${isOpen ? styles.open : ""}`}>
-        <a href="#home" onClick={() => setIsOpen(false)}>
+        <a href="/" onClick={() => setIsOpen(false)}>
           Home
         </a>
-        <a href="#produtos" onClick={() => setIsOpen(false)}>
-          Produtos
-        </a>
-        <a href="#sobre" onClick={() => setIsOpen(false)}>
-          Sobre
-        </a>
-        <a href="#contato" onClick={() => setIsOpen(false)}>
-          Contato
-        </a>
+        <ScrollLink children='Produtos' onClick={() => setIsOpen(false)} section='produtos'/>
+        <ScrollLink children='Sobre' onClick={() => setIsOpen(false)} section='sobre'/>
+        <ScrollLink children='Contato' onClick={() => setIsOpen(false)} section='contato'/>
       </nav>
 
       <div className={styles.search}>

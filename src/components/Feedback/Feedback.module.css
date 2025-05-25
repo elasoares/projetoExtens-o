@@ -23,6 +23,8 @@
   flex-direction: column;
   gap: 20px;
   font-size: 15px;
+} .title {
+  font-size: 25px;
 }
 @media (min-width: 1024px) {
   .containerFlex {
@@ -48,6 +50,9 @@
   align-items: center;
   height: 300px;
   margin-bottom: 100px;
+}
+ .title {
+  font-size: 30px;
 }
   
 }

@@ -22,7 +22,7 @@ export default function Feedback(){
                 <svg width="7" height="45" viewBox="0 0 7 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" width="6" height="45" rx="3" fill="#EBD96B"/>
                 </svg>
-                <h2>Feedback</h2>
+                <h2 className={styles.title}>Feedback</h2>
             </div>
             <div className={styles.containerCards}> 
             <FeedbackCard nome={clientesFeedback.cliente1.nome} descricao={clientesFeedback.cliente1.descricao}/>

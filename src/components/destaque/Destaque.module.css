@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     background-color: #fcfcfc;
+    scroll-margin-top: 30px;
 }
 
 .titleContainer{
@@ -16,22 +17,23 @@
     width: 90%;
     margin: 50px 100px;
     line-height: 25px;
+    margin-left: 0px;
 }
 .title{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     color: #000000;
+    
 }
 
 .bar{
     height: 24px;
     width: 4px;
-    background-color: #d4aa11;
 }
 
 .destaque{
@@ -105,11 +107,17 @@
         justify-content: center;
         width: 650px;
     }
+    .title {
+        font-size: 25px;
+    }
 }
 
 @media (min-width: 750px) {
     .destaque{
         width: 750px;
+    }
+      .title {
+        font-size: 25px;
     }
 }
 
@@ -124,6 +132,9 @@
 @media (min-width: 1070px) {
     .destaque{
         width: 800px;
+    }
+     .title {
+        font-size: 30px;
     }
 
 }

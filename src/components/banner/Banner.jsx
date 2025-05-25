@@ -15,7 +15,9 @@ export default function Banner() {
                         produtos<br />
                     </h2>
                     <button className={styles.button}>
-                        Compre agora
+                        <a className={styles.link} href='https://wa.me/c/5511988753870' target='_blank'> 
+                            Compre agora
+                         </a>
                     </button>
                 </div>
                 <div className={styles.imageContainer}>

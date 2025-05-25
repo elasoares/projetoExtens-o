@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import logo from '../../assets/logo.png'
 import wpp from '../../assets/wpp.png'
 import styles from './Footer.module.css'
+import { Link } from 'react-router-dom'
+import ScrollLink from '../../components/scrollLink/ScrollLink'
 
 
 export default function Footer({className}) {
@@ -28,19 +30,17 @@ useEffect(() => {
                 <h2 className={styles.title}>Empresa</h2>
                 <ul className={styles.lista}>
                     <li className={styles.item}>
-                        <a href='#home' className={styles.navigation}> 
+                        <Link className={styles.navigation} to={'/'}> 
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li className={styles.item}>
-                         <a href='#produtos' className={styles.navigation}> 
-                            Nossos Produtos
-                        </a> 
+                       <Link className={styles.navigation} to={'/vitrine'}> 
+                            Vitrine
+                        </Link>
                     </li>
                     <li className={styles.item}>
-                         <a href='#sobre' className={styles.navigation}> 
-                            Sobre
-                        </a> 
+                        <ScrollLink children='Sobre' section='sobre'/>
                     </li>
                 </ul>
             </div>

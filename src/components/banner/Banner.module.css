@@ -60,7 +60,17 @@
 
 .imageContainer{
     display: none;
-}
+}  
+.link {
+    text-decoration: none;
+    color: azure;
+} 
+.link:visited {
+    color: azure
+    
+} .link:hover {
+   text-shadow: 0 0 8px white;
+} 
 
 
 
