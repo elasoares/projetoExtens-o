@@ -4,6 +4,7 @@ import styles from "./Vitrine.module.css";
 import { Button } from "../../components/button/Button";
 import { produtos } from "../../components/produtos/produtos";
 import { Card } from "../../components/card/Card";
+import { WhatsApp } from "../../components/whatsApp/WhatsApp";
 
 
 export function Vitrine(){
@@ -24,17 +25,20 @@ export function Vitrine(){
                 <Button onClick={() => setGenero("todos")} ativo={genero === "todos"}>Todos</Button>
             </div>
             <div className={styles.destaque}>
-                {produtoFiltrados.map((p)=>{
+                {produtoFiltrados.map((p, index)=>{
                     return(
-                        <Card key={p.id}>
-                            <img src={p.img} alt={p.title} className={styles.img} />
-                            <div className={styles.descriptionContainer}>
-                                <div className={styles.textContainer}>
-                                    <h3 className={styles.description}>{p.title}</h3>
-                                    <p className={styles.brand}>{p.brand}</p>
+                        <div key={index} className={styles.item}>
+                            <Card>
+                                <img src={p.img} alt={p.title} className={styles.img} />
+                                <div className={styles.descriptionContainer}>
+                                    <div className={styles.textContainer}>
+                                        <h3 className={styles.description}>{p.title}</h3>
+                                        <p className={styles.brand}>{p.brand}</p>
+                                    </div>
+                                    <WhatsApp linkWhatsApp={styles.linkWhatsApp} iconWhatsApp={styles.iconWhatsApp} />
                                 </div>
-                            </div>
-                        </Card>
+                            </Card>
+                        </div>
                     )
                 })}
             </div>
