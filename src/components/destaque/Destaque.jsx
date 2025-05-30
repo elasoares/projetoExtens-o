@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 import { Card } from '../card/Card';
 import styles from './Destaque.module.css';
-import Button from '../buttonPatrick/Button';
+import Button from '../button/Button';
 import { WhatsApp } from "../whatsApp/WhatsApp";
 
 const destaque = [

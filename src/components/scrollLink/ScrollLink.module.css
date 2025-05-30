@@ -1,9 +1,9 @@
- .anchor {
+.anchor {
     text-decoration: none;
     color: azure;
 } 
 .anchor:visited {
     color: azure
 } .anchor:hover {
-   text-shadow: 0 0 8px white;
+    text-shadow: 0 0 8px white;
 } 

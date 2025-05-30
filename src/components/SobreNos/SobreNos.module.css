@@ -26,9 +26,9 @@
 .conteudo {
   display: flex;
   flex-direction: row;
-  gap: 1rem; /* <-- menor distância entre texto e imagem */
+  gap: 1rem; 
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -41,7 +41,7 @@
 
 .imagem {
   flex: 1;
-  max-width: 600px; /* <-- maior imagem */
+  max-width: 600px; 
   height: auto;
   border-radius: 8px;
   background-color: #ccc;

@@ -7,7 +7,7 @@ export default function ScrollLink({ children, section, onClick }) {
       href={`#${section}`}
       onClick={(e) => {
         e.preventDefault();
-        if (onClick) onClick(); // ex: setIsOpen(false) pode ser passado daqui
+        if (onClick) onClick(); 
         const element = document.getElementById(section);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });

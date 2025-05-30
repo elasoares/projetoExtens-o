@@ -35,7 +35,7 @@ useEffect(() => {
                         </Link>
                     </li>
                     <li className={styles.item}>
-                       <Link className={styles.navigation} to={'/vitrine'}> 
+                        <Link className={styles.navigation} to={'/vitrine'}> 
                             Vitrine
                         </Link>
                     </li>

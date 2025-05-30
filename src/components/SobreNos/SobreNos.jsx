@@ -1,5 +1,5 @@
 import styles from "./SobreNos.module.css";
-import sobreImage from "../../assets/sobre.png"; // coloque a imagem correta
+import sobreImage from "../../assets/sobre.png"; 
 
 export default function SobreNos() {
   return (
