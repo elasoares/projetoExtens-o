@@ -21,7 +21,7 @@ function App() {
           <Route path="/contato" element="Contato" /> */}
           <Route path="/vitrine" element={<Vitrine/>} />
         </Routes>
-      </Layout>
+      </Layout> 
     </HashRouter>
   )
 }

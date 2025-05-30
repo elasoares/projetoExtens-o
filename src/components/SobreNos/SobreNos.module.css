@@ -28,7 +28,7 @@
   flex-direction: row;
   gap: 1rem; /* <-- menor distância entre texto e imagem */
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
