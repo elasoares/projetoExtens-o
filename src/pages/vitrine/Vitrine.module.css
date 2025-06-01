@@ -6,6 +6,9 @@
     width: 100%;
     height: 100%;
     background-color: #fcfcfc;
+    gap: 15px;
+    margin-top: 30%;
+    margin-bottom:30%;
 }
 
 .titleContainer{
@@ -135,8 +138,19 @@
 .item:hover .linkWhatsApp {
     opacity: 1;
     visibility: visible;
-}
-
+} .containerInput {
+    display: block;
+    position: relative;
+    width: 33dvw;
+} .iconLupa {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+     width: 16px;
+     height: 16px;
+} 
 
 
 @media (min-width: 650px) {
@@ -165,6 +179,9 @@
 @media (min-width: 1070px) {
     .destaque{
         width: 800px;
+    } .container {
+        margin-top: 5%;
+        margin-bottom:5%;
     }
 
 }

@@ -113,7 +113,7 @@
     .containerFlex {
         background-color: black;
         /* border: 3px solid yellow; */
-        min-height: 50dvh;
+        min-height: 70dvh;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
