@@ -1,5 +1,4 @@
 import styles from "./SobreNos.module.css";
-import sobreImage from "../../assets/sobre.png"; 
 
 export default function SobreNos() {
   return (
@@ -25,7 +24,7 @@ export default function SobreNos() {
           <br />E o melhor: tudo com aquele atendimento de parceiro mesmo, sem
           enrolação.
         </p>
-        <img src={sobreImage} alt="Sobre nós" className={styles.imagem} />
+        <img src="./sobre.png" alt="Sobre nós" className={styles.imagem} />
       </div>
     </section>
   );

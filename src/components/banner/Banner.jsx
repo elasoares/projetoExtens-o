@@ -1,5 +1,4 @@
 import styles from "./Banner.module.css";
-import banner from "../../assets/banner.svg"
 
 
 export default function Banner() {
@@ -17,12 +16,12 @@ export default function Banner() {
                     <button className={styles.button}>
                         <a className={styles.link} href='https://wa.me/c/5511988753870' target='_blank'> 
                             Compre agora
-                         </a>
+                        </a>
                     </button>
                 </div>
                 <div className={styles.imageContainer}>
                     <img 
-                        src={banner}
+                        src="./banner.svg"
                         alt="Banner" 
                         className={styles.bannerImage}
                     />

@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import logo from '../../assets/logo.png'
-import wpp from '../../assets/wpp.png'
 import styles from './Footer.module.css'
 import { Link } from 'react-router-dom'
 import ScrollLink from '../../components/scrollLink/ScrollLink'
@@ -17,7 +15,7 @@ useEffect(() => {
         <> 
         <div className={`${className} ${styles.containerFlex}`} id='contato'>
             <div className={styles.divLogo}>
-                <img className={styles.logo} src={logo} alt='logo'/>
+                <img className={styles.logo} src="./logo.png" alt='logo'/>
                 {largura > 1023 ? (
                     <a href='https://www.instagram.com/kmilaoutlet/' target='_blank'> 
                         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +46,7 @@ useEffect(() => {
                 <h2 className={styles.title}>Fale Conosco</h2>
                 <span className={styles.text}>Nos Chame Pelo Whatsapp!</span>
                 <a href='https://wa.me/c/5511988753870' target='_blank'> 
-                <img className={styles.wpp} src={wpp} alt='wpp-icon'/>
+                <img className={styles.wpp} src="./wpp.png" alt='wpp-icon'/>
                 </a>
             </div>
             <div className={styles.containerRedeSocial}>

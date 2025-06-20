@@ -1,8 +1,3 @@
-import img1 from "../../assets/1.jpg";
-import img2 from "../../assets/2.jpg";
-import img3 from "../../assets/3.jpg";
-import img4 from "../../assets/4.jpg";
-
 import { Link } from 'react-router-dom';
 
 
@@ -12,10 +7,10 @@ import Button from '../button/Button';
 import { WhatsApp } from "../whatsApp/WhatsApp";
 
 const destaque = [
-    {img: img1, title:"Bermuda com elas...", brand:"nike"},
-    {img: img2, title:"Camisetas", brand:"EA"},
-    {img: img3, title:"Camisetas", brand:"nike"},
-    {img: img4, title:"Camisetas", brand:"Boss"},
+    {img: "./1.jpg", title:"Bermuda com elas...", brand:"nike"},
+    {img: "./2.jpg", title:"Camisetas", brand:"EA"},
+    {img: "./3.jpg", title:"Camisetas", brand:"nike"},
+    {img: "./4.jpg", title:"Camisetas", brand:"Boss"},
 
 ]
 
