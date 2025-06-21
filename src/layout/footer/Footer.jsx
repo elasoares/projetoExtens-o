@@ -57,13 +57,6 @@ useEffect(() => {
                     </svg>
                 </a>
             </div>
-            {/* <div className={styles.containerEmail}>
-                <h2 className={styles.titleEmail}>Fique por dentro das novidades!</h2>
-                <div className={styles.containerInput}>
-                <input type='text' className={styles.inputEmail} placeholder='Digite seu e-mail'/>
-                <button className={styles.btEmail}><span className={styles.btText}>Enviar</span></button>
-                </div>
-            </div> */}
             <div className={styles.containerCopyRight}>
                 <hr className={styles.line}/>
                 <span className={styles.text}>Copyright © 2025 Kmila Outlet.Todos os direitos reservados.</span>

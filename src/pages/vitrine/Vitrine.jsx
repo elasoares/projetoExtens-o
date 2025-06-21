@@ -27,7 +27,7 @@ export function Vitrine(){
             <Title children='Nossos Produtos'/>
             <div className={styles.containerInput}>
                 <TextInput id='busca-por-texto' onChange={(e) => setBusca(e.target.value)}/>
-                   <svg
+                    <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"

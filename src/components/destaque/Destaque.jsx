@@ -18,12 +18,6 @@ export default function Destaque(){
 
     return(
         <section className={styles.container} id="produtos">
-            {/* <div className={styles.titleContainer}>
-                <svg width="7" height="45" viewBox="0 0 7 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" width="6" height="45" rx="3" fill="#EBD96B"/>
-                </svg>
-                <h2 className={styles.title}><div className={styles.bar}></div>Em destaque</h2>
-            </div> */}
             <div className={styles.destaque}>
                 {destaque.map((item, index) => (
                         <div key={index} className={styles.item}>
